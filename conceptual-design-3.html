@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mindful Progress-Conceptual Design Exploration</title>
+    <meta name="description" content="">
+    <meta name="author" content="Alan May">
+
+
+    <!-- FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/mindfulprogress.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+
+    <header class="row">
+        <div class="centered">
+            <h1>Conceptual Design - Concept 3</h1>
+        </div>
+    </header>
+
+    <main>
+        <h3>Domain-Aware Technological Solution</h3>
+
+        <h4> Solution Description </h4>
+
+        <p><a href="core-flow-storyboard.pdf">Here</a> is a storyboard describing the core flow.
+
+
+        <ul>
+            <li>For all habits supported, look for any avenue to reduce barriers to users being successful</li>
+            <li>Supportive feedback in all interactions</li>
+            <li>User has ability to reduce the time demands on a busy day while still building the seed of the habit
+            </li>
+
+            <li>Build positive habits via smart phone app initially. Rationale:
+                <ul>
+                    <li>Smartphones and the combination of smart phones and smart watches provide interesting form
+                        factors and capabilities for a tool such as this. Smart
+                        watches are a growing segment, but with less than 30,000,000 units projected to be in use
+                        globally
+                        at the end of 2015. <sub>1</sub> Given limited resources and , It makes more sense to start with
+                        a phone application.
+                    </li>
+                    <li>10% of US population have no broadband access at home, but have a smartphone<sub>2</sub></li>
+                    <li>15% of Americans have few other options besides their cell phone <sub>2</sub></li>
+                    <li>15% of those aged 18-29 rely heavily on smartphones for internet access <sub>2</sub></li>
+                    <li>93% of users view smartphones as helpful <sub>2</sub></li>
+                </ul>
+            </li>
+
+        </ul>
+        <p>
+            Sources:<br/>
+            <sub>1</sub> <a href="http://www.businessinsider.com/wearable-computing-market-statistics-2015-1">Business
+            Insider
+            Report on Wearable Computing Marketing Statistics 2015</a><br/>
+            <sub>2</sub> <a href="http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015/">Pew Research Center
+            Report on
+            U.S. Smartphone Use in 2015</a>
+        </p>
+
+        <h3>Flowchart for daily flow</h3>
+        <a href="dailyflowchart.graffle.pdf">This</a> flow chart describes the daily flow of the user.
+        <p></p>
+
+
+        <h3>Design Questions/Alternatives</h3>
+
+        <h5>How should a user indicate which habits he or she is interested in building?</h5>
+        <ul>
+            <li>Option A: Choose a group of individual potential habits from a list during onboarding or at the
+                point when you unlock the right to build a new habit.
+            </li>
+            <li>Option B: Choose an aspirational theme or themes ("I would like to be" ... "fit" or "balanced" or
+                "creative")
+                during onboarding and have that drive mapping to habits
+            </li>
+            <li>Option C: "Baseball Catcher" type approach. Catcher suggests possibilities that the pitcher can
+                override. Similarly, the app suggests the highest potential return habits or those which have the
+                most logical ordering for practical/logistical reasons
+            </li>
+        </ul>
+
+        <p>
+            These options go in order of rank from most user determined to most guided. BJ Fogg (Director, Persuasive
+            Tech Lab - Stanford) and Erik Heckler (Director, Designing Health Lab - Arizona State University)
+            put emphasis on the importance of user agency, that overly directed models, even when built with
+            well-reasoned evidence based medicine and research, seem to fail. The problem may lie in user buy in.
+
+            Initial designs will be based on Option A, but this will be a line of inquiry during user testing
+        </p>
+
+
+        <h5>How should habits be chained such that the user doesn't get bored nor discouraged?</h5>
+        <ul>
+            <li>Option A: Build habits serially (with a threshold of "mastery" to unlock additional habits)
+            </li>
+            <li>Option B: Build small versions of a series of habits ("floss one tooth") to reduce habit initiation
+                cost
+            </li>
+            <li>Option C: Take a hybrid of A & B. Start with small versions of some habits and build them in
+                duration/complexity and have the ability to unlock additional habits with mastery.
+            </li>
+        </ul>
+
+
+        <p>
+            This seems like a rich topic for exploration. If we record the user's success or failure on completion of
+            a requested task, the model can be refined and gutted if necessary. To start with Option C does not add
+            significant additional complexity for building an iteration of the product, so this will allow us to
+            collect more data points.
+        </p>
+
+
+        <h5>On the third volunteer-only survey through Austin Craigslist, the respondents were 80%+ female (with a wide
+            distribution in ages from 18-59). Is the demographic result being indicative of
+            general relative interest, or perhaps women in Austin are more interested in than men in volunteering, or
+            just small sample-oriented bias/noise? If it is indicative of
+            relative interest, how should the deliverable be focused on women's needs?
+        </h5>
+
+        <p>
+            More data is needed. This could impact a number of facets of the application's final design, from
+            options for habits to be formed, to data collected, to visual elements of the app. There was also a wide
+            distribution
+            of ages of the women from 18-59. The project may also want to further narrow the target audience to, for
+            instance, a given age demographic. The Amazon Mechanical Turk
+            study 1, indicated interest by members of both sexes and across a wide age range in an offering.
+        </p>
+
+        <h5>Are there other habits that were not specifically requested, but may be high return on investment for the
+            user or serve some other purpose (like being a helpful beginning or ending anchor activity)
+        </h5>
+
+        <p>Accomodating the person's need to go to the restrooom and perhaps recommending that one make one's bed if it
+            is empty on wake up.
+            Admiral McRaven made a very compelling argument for making one's bed every morning in this speech. His
+            description of an anchor habit is completely in synch with the spirit of this project.</p>
+
+
+            <div class="youtube-container">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/pxBQLFLei70?start=284&amp;end=374&amp;rel=0&amp;&amp;controls=0"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+        <h5>What strategies do users find most compelling for establishing trust, conveying a positive energy, and
+            keeping the users engaged?
+        </h5>
+
+        <p>
+            Some proposed initial strategies to test:
+        <ul>
+            <li> An always present, monotonically increasing count of healthy habit actions performed to date
+            <li> Option upload of a picture of loved ones to motivate one to get started
+            <li> A positive message in a down to earth tone in videos
+            <li> Positive findings displays (ex. graphs of weight loss during a period of time when behaviors have been
+                consistent)
+            <li> Short form encouragement or celebration videos from other users
+            <li> Short form encouragement or celebration videos from celebrities
+            <li> Admitting when we don't have the best solution for a specific set of needs (user who is solely fitness
+                focused, for example, might be served better by the 7-minute workout app)
+        </ul>
+        </p>
+
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a><a href="conceptual-design.html">Next - Conceptual Design</a>
+        </nav>
+        <div class="centered big-margin"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img
+                alt="Creative Commons License" style="border-width:0"
+                src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"/></a><br/>This work is licensed under a <a
+                rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons
+            Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+        </div>
+    </footer>
+</div>
+
+<!-- End Document -->
+</body>
+</html>
