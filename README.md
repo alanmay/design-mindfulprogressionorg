@@ -1,6 +1,6 @@
-# design-mindfulprogressionorg
-Designs for mindfulprogression.org's products
+# design-mindfulprogressorg
+Designs for mindfulprogress.org's products
 
-To this site, please go to [http://design.mindfulprogression.com]
+These materials are published to http://design.mindfulprogress.org
 
 
