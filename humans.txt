@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  James "Alan" May -- Founder -- @swervesolutions
+
+# THANKS
+
+  Tableau for a wonderful data visualization tool, Tableau Public.
+
+  PsychTech ATX Meetup for prolific sharing of information on behavior design
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
