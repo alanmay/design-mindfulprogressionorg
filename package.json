@@ -1,0 +1,28 @@
+{
+  "name": "design.mindfulprogress.org",
+  "version": "0.1.0",
+  "description": "Design for Mindful Progress Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanmay/design-mindfulprogressorg.git"
+  },
+  "keywords": [
+    "Habits",
+    "Routines",
+    "Behavior",
+    "Design",
+    "Action",
+    "Design"
+  ],
+  "author": "Alan May",
+  "license": "CC-BY-NC-SA-3.0",
+  "bugs": {
+    "url": "https://github.com/alanmay/design-mindfulprogressorg/issues"
+  },
+  "homepage": "https://github.com/alanmay/design-mindfulprogressorg#readme",
+  "private":true
+}
