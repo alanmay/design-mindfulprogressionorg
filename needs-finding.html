@@ -1,246 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Mobile Specific -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mindful Progress - Needs Finding</title>
-    <meta name="description" content="">
-    <meta name="author" content="Alan May">
-
-
-    <!-- FONT -->
-    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <title>Mindful Progress - Needs Finding</title>
+  <meta name="description" content="">
+  <meta name="author" content="Alan May">
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/skeleton.css">
-    <link rel="stylesheet" href="/styles/mindfulprogress.css">
+  <!-- FONT -->
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- Cannonical URL -->
-    <link rel="canonical" href="http://design.mindfulprogress.org/needs-finding.html" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/skeleton.css">
+  <link rel="stylesheet" href="/styles/mindfulprogress.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Cannonical URL -->
+  <link rel="canonical" href="http://design.mindfulprogress.org/needs-finding.html"/>
+
+
+  <!-- Google Polymer - Polyfill Web Components support for older browsers -->
+
+  <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  <link rel="import" href="/bower_components/iron-collapse/iron-collapse.html">
+  <link rel="import" href="/bower_components/paper-styles/shadow.html">
+  <link rel="stylesheet" href="/bower_components/paper-styles/demo.css">
+  <style is="custom-style">
+    .heading {
+      padding: 5px 15px;
+      margin-top: 20px;
+      background-color: #f3f3f3;
+      border: 1px solid #dedede;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      width: 100%;
+      text-align: left;
+      font-family: Oxygen;
+    }
+
+    .content {
+      padding: 15px;
+      border: 1px solid #dedede;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      @apply(--shadow-elevation-2dp);
+    }
+
+    #collapse3 {
+      max-height: 250px;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    h2 {
+      padding-top: 1.8em;
+    }
+
+    h1 {
+      margin-bottom: -.5em;
+      padding-bottom: 0em;
+    }
+
+    .collapse-widget {
+      padding-right:.8em;
+    }
+    .nested-list {
+      padding-left:1em;
+    }
+  </style>
+
 </head>
 <body>
 <div class="container">
+  <header class="row">
+    <div class="centered">
+      <h1>Needs Finding</h1>
+    </div>
+  </header>
+  <main>
 
-    <header class="row">
-        <div class="centered">
-            <h1>Needs Finding</h1></div>
-    </header>
-    <main>
+    <h2>Emerging Story</h2>
+    Across the research done to date, it appears that a majority of respondents are quite interested in tools to support them with the goal of adding new behaviors
+    into their daily routines( genders and ages).  Respondents were motivated by improving their health, reducing stress, and improving themselves, but they
+    needed to see fast results.  They were most interested in getting fit and eating right, but reported having been hampered by
+    lack of time, motivation, and responsibilities.  Other challenges were trouble with maintaining consistency in their routines, and with getting nearly two hours less sleep per night than recommended.
+    Participants were open to a routine up to about 40 minutes in duration, so time efficiency will be at a premium.
 
+    <h2>Initial Interest Survey</h2>
 
-        <h2>Survey 1</h2>
+    <div class="survey-component">
+      <button class="heading" onclick="toggle('#collapse-initial-interest-survey')"><span class="collapse-widget">&#x25BC;</span> Needs Finding</h1>
+        Research Plan Summary</button>
 
-        <div class="survey-component">
+      <iron-collapse id="collapse-initial-interest-survey" closed tabindex="0">
+        <div class="content">
+          <div>
+            <h4>Background</h4>
+            As a first step in this project, this is a initial exploration of
+            issues surrounding what a morning routine can be.
+
+            <h4>Goals</h4>
+
+            <ol>
+              <li>Put out a feeler for if help with positive habit or routine formation is of interest to respondents
+              </li>
+              <li>Understand basic demographics of respondents</li>
+              <li>Get information on what respondents have already incorporated into their routines and begin to explore
+                what challenges they have and what habits they would like to add.
+              </li>
+            </ol>
+
+            <h4>Constraints:</h4>
+            <ul>
+              <li>$0 budget</li>
+              <li>Given respondents are not going to be paid, this survey should be extremely short with low cognitive
+                load required.
+              </li>
+            </ul>
+
             <h4>Methodology</h4>
-            <ul>
-                <li>Survey respondent recruitment was done via Amazon's Mechanical Turk.
-                    Filters were applied to:<ul>
-                        <li>limit the results to residents of U.S.A. only</li>
-                            <li>to ensure the respondents had experience on the
-                    Mechanical Turk platform and </li>
-                        <li>their work had a high acceptance rate for previous tasks. </li>
-                        </ul></li>
-                            <li>Research has
-                    shown that
-                    samples drawn using Mechanical Turk are reasonably representative of US populations but skewing somewhat younger and
-                    somewhat more highly educated than the
-                    general population. See backing data: <a
-                            href="http://priceonomics.com/mechanical-turk-new-face-of-behavioral-science">Mechanical
-                        Turk The New Face of Behavioral Science</a></li>
-                <li>As a side note:  Mechanical
-                Turk's population of users is almost exclusively limited to USA and India, due largely to expedited payment
-                mechanisms available to "Turkers"(paid participants) in those specific countries but not in other countries.</li>
-                <li>There were 50 respondents.  49 is the sample size needed for a 95% confidence level with a 14% confidence
-                    interval for the population of the US (approximately 319,000,000)
-                </li>
-                <li>14% is a high margin of error, but given the original budgetary constraints this was an acceptable
-                    approximation that yielded some interesting insights
-                </li>
-                <li>Survey Delivery: The survey was delivered directly on Mechanical Turk</li>
 
+            This research method was selected to solicit opinions from a reasonably large number of participants to get
+            some insight on whether people wanted help with behaviors or not.
+            <uL>
+              <li>
+                Survey recruitment will be done through austin.craigslist.org's site.
+              </li>
+              <li>
+                Survey delivery will be through a free SurveyMonkey.com's website. This version of SurveyMonkey has a
+                limitation that doesn't prevent multiple submissions, but this is not expected to be an issue, because
+                there is no significant incentive to do so.
+              </li>
+
+            </uL>
+
+            <h4>Questions</h4>
+            <table>
+              <tr>
+
+                <th>
+                  Question Number
+                </th>
+                <th>
+                  Question Text
+                </th>
+                <th>
+                  Discussion
+                </th>
+              </tr>
+              <tr>
+                <td class="right">1.</td>
+                <td>What is your gender?</td>
+                <td>Learn basic demographic information. Closed ended with choices for Male, Femaale, and Other</td>
+
+              </tr>
+              <tr>
+                <td class="right">2.</td>
+                <td>What is your age?</td>
+                <td>Learn basic demographic information. Possible low grade incentive to not be truthful. Closed ended
+                  format
+                  with choices "Under 18( sorry we are not able to accept your feedback at this time.", "18-19",
+                  "20-24", "25-29",... "60-64", and "70 or older")
+                </td>
+              </tr>
+              <tr>
+                <td class="right">3.</td>
+                <td>In the past week, what challenges have you faced in incorporating healthy activities into your day?
+                  (plese don'ta discussion any medical conditions)
+                </td>
+                <td>Open Ended Question format.</td>
+              </tr>
+              <tr>
+
+              </tr>
+              <tr>
+                <td class="right">4.</td>
+                <td>What new positive habits would you like to include into your daily routine? (please don't discuss
+                  any medical conditions)
+                </td>
+                <td>Open ended question format.</td>
+              </tr>
+              <tr>
+                <td class="right">5.</td>
+                <td>How many minutes would you be willing to spend right when you wake up in the morning working on the
+                  habits you described above if you had an automated no-cost positive coach/mentor encouraging?
+                </td>
+                <td>Open ended</td>
+              </tr>
+              <tr>
+                <td class="right">6.</td>
+                <td>Which of these is already a daily morning habit?</td>
+                <td>radio box choices for "making the bed", "exercising", "meditating", writing down what you are
+                  thankful for", "Prioritizing your top five items for the day", "Reviewing your calendar", "Visualizing
+                  being successful at something that is tricky for you", writing down what would make today great",
+                  "Weighing yourself", "Eating Breakfast", "other positive habits (please specify)
+                </td>
+              </tr>
+              <tr>
+                <td class="right">7.</td>
+                <td>Rank the following potential habits in importance to you (1 being top) On many browsers, you can
+                  drag your top picks to the top by grabbing the handle on the left edge of the item and moving them up
+                  or down in the list for faster sorting. If you get frustrated for any reason, feel free to skip this
+                  question.
+                </td>
+                <td>This is likely the highest cognitive load question and the hardest to complete on a mobile browser.
+                  Same choices as question 7 without the "other" category
+                </td>
+              </tr>
+              <tr>
+                <td class="right">8.</td>
+                <td>Can we publish your responses (with no personally identifiable information?</td>
+                <td>Closed ended with yes and no choices</td>
+              </tr>
+              <tr>
+                <td class="right">9.</td>
+                <td>Future Participation</td>
+                <td>Checkbox 1: I'd like to provide feedback on future design concepts, prototypes, early betas, etc.
+                  (no obligation). Checkbox 2: I'd like to alerted when new releases are available of this application.
+                  Along with the face value of the questions, they also serve as a proxy for level of interest
+                </td>
+              </tr>
+            </table>
+
+
+          </div>
+        </div>
+      </iron-collapse>
+    </div>
+    <div class="survey-component">
+      <a href="SurveyMonkey%20Analyze%20-%20Habits%20for%20Happiness%20and%20Well%20Being%20Survey.pdf">Initial Interest
+        Survey
+        Questions and
+        Responses</a>
+    </div>
+
+
+    <div class="survey-component">
+      <button class="heading" onclick="toggle('#collapse-initial-interest-survey-analysis')"><span class="collapse-widget">&#x25BC;</span>Analysis</button>
+
+      <iron-collapse id="collapse-initial-interest-survey-analysis" closed tabindex="0">
+        <div class="content">
+
+          <ul>
+            <li>There were 37 respondents when the survey was closed on February 2, 2016.</li>
+            <li>Respondents were not paid for their efforts. I am grateful for their participation and
+              contribution to this project.
+            </li>
+            <li>Respondents were >86% female. This raises an interesting question as to whether this was due to women
+              having more of an interest in volunteering - or if they had more of an interest in the topic itself.
+              The group of respondents had a wide age range.
+            </li>
+            <li>Many survey respondents are open to participating in providing additional feedback on design
+              concepts and early software implementations.
+            </li>
+            <li>Question 7 was problematic. The question asked the respondents to rank habit options in priority order.
+              This structure of this question generates more cognitive load than the others and the user interface on
+              some
+              browser platforms did not enforce adequate consistency checks.
+            </li>
+            <li>Open-ended questions had to have HIPAA Privacy Rule related warnings because email contact
+              information was collected and respondents potentially could disclose sensitive medical-related data.
+              No respondent's actual responses had sensitive data concerns.
+            </li>
+            <li>
+              On reflection, questions 5 and 6 were phrased in a manner that was too leading in nature, hinting at a
+              potential solution.
+            </li>
+          </ul>
+        </div>
+      </iron-collapse>
+
+
+    </div>
+
+
+    <h2>Survey 1</h2>
+
+    <div class="survey-component">
+
+      <button class="heading" onclick="toggle('#collapse-survey-one-research-plan')"><span class="collapse-widget">&#x25BC;</span>Research Plan Summary</button>
+
+      <iron-collapse id="collapse-survey-one-research-plan" closed tabindex="0">
+        <div class="content">
+
+          <h4>Background</h4>
+          There were signals of initial interest from the initial interest survey respondents. The next survey is
+          here to explore with largely open-ended questions.
+
+          <h4>Goals</h4>
+
+          <ol>
+            <li>Provide a larger sample from a wider geographic distribution (US-wide vs. Austin only).</li>
+            <li>Understand basic demographics of respondents</li>
+            <li>Get information on what respondents have already incorporated into their routines and begin to explore
+              what challenges they have and what habits they would like to add.
+            </li>
+            <li>Get insight as to when in the day people are most respondents interested in building a routine</li>
+            <li>Gauge how interested in supporting tools are the respondents?</li>
+            <li>Drilling into the challenges, understand how well rested are respondents?</li>
+          </ol>
+
+          <h4>Constraints:</h4>
+          <ul>
+            <li>low budget</li>
+            <li>would like to gain insight with minimal time investment and with a fast access to results</li>
+          </ul>
+
+          <h4>Survey Questions</h4>
+          <a href="survey1questions.html">Survey 1 Questions</a>
+
+          <h4>Methodology</h4>
+          <ul>
+            <li>Survey respondent recruitment will be done via Amazon's Mechanical Turk.
+              Filters will be applied to:
+              <ul>
+                <li>limit the results to residents of U.S.A. only</li>
+                <li>to ensure the respondents had experience on the
+                  Mechanical Turk platform and
+                </li>
+                <li>their work had a high acceptance rate for previous tasks.</li>
+              </ul>
+            </li>
+            <li>Research has
+              shown that
+              samples drawn using Mechanical Turk are reasonably representative of US populations but skewing somewhat
+              younger and
+              somewhat more highly educated than the
+              general population. See backing data: <a
+                href="http://priceonomics.com/mechanical-turk-new-face-of-behavioral-science">Mechanical
+                Turk The New Face of Behavioral Science</a></li>
+            <li>As a side note: Mechanical
+              Turk's population of users is almost exclusively limited to USA and India, due largely to expedited
+              payment
+              mechanisms available to "Turkers"(paid participants) in those specific countries but not in other
+              countries.
+            </li>
+
+            <li>Survey Delivery: The survey will be delivered directly on Mechanical Turk</li>
+
+          </ul>
+        </div>
+      </iron-collapse>
+
+    </div>
+
+    <div class="survey-component">
+
+      <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+      <div class='tableauPlaceholder' style='width: 1020px; height: 1033px;'>
+        <noscript><a href='#'><img alt='Building Positive Habits '
+                                   src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey1v1forInitialNeedsFindingforAddingPositiveHabitsApp&#47;NeedsFindingSurveyFindings1&#47;1_rss.png'
+                                   style='border: none'/></a></noscript>
+        <object class='tableauViz' width='893' height='1033' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+          <param name='site_root' value=''/>
+          <param name='name'
+                 value='Survey1v1forInitialNeedsFindingforAddingPositiveHabitsApp&#47;NeedsFindingSurveyFindings1'/>
+          <param name='tabs' value='no'/>
+          <param name='toolbar' value='yes'/>
+          <param name='static_image'
+                 value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey1v1forInitialNeedsFindingforAddingPositiveHabitsApp&#47;NeedsFindingSurveyFindings1&#47;1.png'/>
+          <param name='animate_transition' value='yes'/>
+          <param name='display_static_image' value='yes'/>
+          <param name='display_spinner' value='yes'/>
+          <param name='display_overlay' value='yes'/>
+          <param name='display_count' value='yes'/>
+          <param name='showVizHome' value='no'/>
+          <param name='showTabs' value='y'/>
+          <param name='bootstrapWhenNotified' value='true'/>
+        </object>
+      </div>
+
+    </div>
+
+
+    <div class="survey-component">
+
+      <button class="heading" onclick="toggle('#collapse-survey-one-raw-data')"><span class="collapse-widget">&#x25BC;</span>Raw Data</button>
+
+      <iron-collapse id="collapse-survey-one-raw-data" closed tabindex="0">
+        <div class="content">
+
+          <p>
+            <a href="survey1results.xlsx">Raw Data(Microsoft Excel Format)</a>
+          </p>
+
+
+          <ul>
+            <li>The respondent ids have been removed to remove any potential tracability to users to allay any
+              potential HIPAA privacy data concerns related to protected health information (PHI)
+            </li>
+            <li>Additional columns were added to support coding of responses to questions with open ended
+              responses
+            </li>
+            <li>Additional columns were added to support word clouds</li>
+          </ul>
+        </div>
+      </iron-collapse>
+    </div>
+
+
+    <div class="survey-component">
+
+      <button class="heading" onclick="toggle('#collapse-survey-one-analysis')"><span class="collapse-widget">&#x25BC;</span>Analysis</button>
+
+      <iron-collapse id="collapse-survey-one-analysis" closed tabindex="0">
+        <div class="content">
+          <li>There were 50 respondents. 49 is the sample size needed for a 95% confidence level with a 14% confidence
+            interval for the population of the US (approximately 319,000,000)
+          </li>
+          <li>14% is a high margin of error, but given the original budgetary constraints this was an acceptable
+            approximation that yielded some interesting insights
+          </li>
+          <li>Hours of sleep reported: 5.9 for women and 6.6 for men.  Sleep data is notoriously problematic.  For instance,
+            researchers Diane Lauderdale concluded that people with higher educated, higher paid got more sleep than average individuals, while Dan
+            Hammermesh concluded exactly the opposite.
+
+            <ul class="nested-list">
+              <li>"The Economics of Sleep", http://freakonomics.com/podcast/economics-sleep-part-1-freakonomics-radio-rebroadcast/</li>
+              <li>“Effects of Experimental Sleep Restriction on Weight Gain, Caloric Intake, and Meal Timing in Healthy
+                Adults,” by Andrea M. Spaeth, David F. Dinges, Namni Goel (January 2013).
+              </li>
+              <li>“Inadequate Sleep Duration as a Public Health and Social Justice Problem: Can We Truly Trade Off Our
+                Daily Activities for More Sleep?” by Lauren Hale (Sleep, October 2014).
+              </li>
+              <li>“Racial Differences in Self-Reports of Sleep Duration in a Population-Based Study” by Lauren Hale and
+                D. Phuong Do (Sleep, September 2007).
+              </li>
+              <li>“Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning
+                alertness” by Anne-Marie Chang, Daniel Aeschbach, Jeanne F. Duffy, and Charles A. Czeislera (Proceedings
+                of the National Academy of Sciences, 2014)
+              </li>
             </ul>
+          </li>
+          <li>Time and Motivation far outstripped other challenges reported.</li>
+          <li>62% reported they were "very interested in a free tool to support building habits</li>
         </div>
-        <div class="survey-component">
-            <h4>Survey Questions</h4>
-            <a href="survey1questions.html">Survey 1 Questions</a>
-        </div>
-        <div class="survey-component">
-            <h3>Survey Results Summary</h3>
-            <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-            <div class='tableauPlaceholder' style='width: 1020px; height: 1033px;'>
-                <noscript><a href='#'><img alt='Building Positive Habits '
-                                           src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey1v1forInitialNeedsFindingforAddingPositiveHabitsApp&#47;NeedsFindingSurveyFindings1&#47;1_rss.png'
-                                           style='border: none'/></a></noscript>
-                <object class='tableauViz' width='893' height='1033' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
-                    <param name='site_root' value=''/>
-                    <param name='name'
-                           value='Survey1v1forInitialNeedsFindingforAddingPositiveHabitsApp&#47;NeedsFindingSurveyFindings1'/>
-                    <param name='tabs' value='no'/>
-                    <param name='toolbar' value='yes'/>
-                    <param name='static_image'
-                           value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey1v1forInitialNeedsFindingforAddingPositiveHabitsApp&#47;NeedsFindingSurveyFindings1&#47;1.png'/>
-                    <param name='animate_transition' value='yes'/>
-                    <param name='display_static_image' value='yes'/>
-                    <param name='display_spinner' value='yes'/>
-                    <param name='display_overlay' value='yes'/>
-                    <param name='display_count' value='yes'/>
-                    <param name='showVizHome' value='no'/>
-                    <param name='showTabs' value='y'/>
-                    <param name='bootstrapWhenNotified' value='true'/>
-                </object>
-            </div>
+      </iron-collapse>
+    </div>
 
-        </div>
 
-        <div class="survey-component">
-            <h4>Survey Results Raw Data</h4>
+    <h2>Survey 2</h2>
 
-            <p>
-                <a href="survey1results.xlsx">Raw Data(Microsoft Excel Format)</a>
-            </p>
 
-            <p>Raw Data Notes</p>
-            <ul>
-                <li>The respondent ids have been removed to remove any potential tracability to users to allay any
-                    potential HIPAA privacy data concerns related to protected health information (PHI)
-                </li>
-                <li>Additional columns were added to support coding of responses to questions with open ended
-                    responses
-                </li>
-                <li>Additional columns were added to support word clouds</li>
-            </ul>
-        </div>
+    <div class="survey-component">
+      <button class="heading" onclick="toggle('#collapse-survey-two-research-summary')"><span class="collapse-widget">&#x25BC;</span>Research Summary</button>
 
-        <h2>Survey 2</h2>
+      <iron-collapse id="collapse-survey-two-research-summary" closed tabindex="0">
+        <div class="content">
 
-        <div class="survey-component">
-            <h4>Methodology</h4>
-            <ul>
-                <li>Participant recruitment followed the same strategy as survey 1.
-                </li>
-                <li>100 respondents - 96 is the sample size needed for a 95% confidence level with a 10% confidence
-                    interval for the population of the US (approximately 319,000,000).
-                </li>
-                <li>10% is a high margin of error, but given the original budgetary constraints this was an acceptable
-                    approximation that yielded some interesting insights
-                </li>
-                <li>To save budget, demographics were not sampled (assuming that the demographics would be reasonably
-                    close to the survey 1's)
-                </li>
+          <h4>Summary</h4>
+          This survey is to gather more open-ended feedback from respondents about what their motivations are to perform new behaviors as part of their day.
 
-                <li>Survey Delivery: The survey was delivered directly on Mechanical Turk</li>
 
-            </ul>
-        </div>
+          <h4>Methodology</h4>
+          <ul>
+            <li>Participant recruitment followed the same strategy as survey 1.
+            </li>
+            <li>100 respondents - 96 is the sample size needed for a 95% confidence level with a 10% confidence
+              interval for the population of the US (approximately 319,000,000).
+            </li>
+            <li>10% is a high margin of error, but given the original budgetary constraints this was an acceptable
+              approximation that yielded some interesting insights
+            </li>
+            <li>To save budget, demographics were not sampled (assuming that the demographics would be reasonably
+              close to the survey 1's)
+            </li>
 
-        <div class="survey-component">
-            <h4>Survey Questions</h4>
+            <li>Survey Delivery: The survey was delivered directly on Mechanical Turk</li>
+
             <a href="survey2questions.html">Survey 2 Question</a>
+          </ul>
         </div>
+      </iron-collapse>
+    </div>
 
-        <div class="survey-component">
-            <h4>Survey Results Summary</h4>
-            <div class='tableauPlaceholder' style='width: 1020px; height: 1033px;'>
-                <noscript><a href='#'><img alt='Story Title '
-                                           src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey2forInitialNeedsFindingforAddingPositiveHabitsApp&#47;Story1&#47;1_rss.png'
-                                           style='border: none'/></a></noscript>
-                <object class='tableauViz' width='893' height='700' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
-                    <param name='site_root' value=''/>
-                    <param name='name' value='Survey2forInitialNeedsFindingforAddingPositiveHabitsApp&#47;Story1'/>
-                    <param name='tabs' value='no'/>
-                    <param name='toolbar' value='yes'/>
-                    <param name='static_image'
-                           value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey2forInitialNeedsFindingforAddingPositiveHabitsApp&#47;Story1&#47;1.png'/>
-                    <param name='animate_transition' value='yes'/>
-                    <param name='display_static_image' value='yes'/>
-                    <param name='display_spinner' value='yes'/>
-                    <param name='display_overlay' value='yes'/>
-                    <param name='display_count' value='yes'/>
-                    <param name='showVizHome' value='no'/>
-                    <param name='showTabs' value='y'/>
-                    <param name='bootstrapWhenNotified' value='true'/>
-                </object>
-            </div>
+    <div class="survey-component">
 
-        </div>
-        <h2>Survey 3</h2>
 
-        <div class="survey-component">
-            <h4>Methodology</h4>
-            <ul>
-                <li>Survey respondent recruitment was done through the austin.craigslist.org site.</li>
-                <li>There were 37 respondents as of February 2, 2016.
-                </li>
-                <li>Respondents were not paid for their efforts. I am sincerely grateful for their participation and
-                    contribution to this project.
-                </li>
-                <li>This was the first survey conducted as an early gauge of interest.</li>
-                <li>Respondents were >86% female. This raises an interesting question as to whether this was due to women
-                    having more of an interest in volunteering - or if they had more of an interest in the topic itself.
-                    The group of respondents had a wide age range.
-                </li>
-                <li>Survey Delivery: The survey was delivered through a free account on SurveyMonkey.com. Given this was
-                    a free account, it suffers from the possibility of respondents taking the survey multiple times.
-                    However, this didn't appear to be a problem in practice particularly given there was little incentive to do so.
-                </li>
-                <li>Many survey respondents are open to participating in providing additional feedback on design
-                    concepts and early software implementations.
-                </li>
-                <li>Question 7 was problematic.  The question asked the respondents to rank habit options in priority order.
-                    This structure of this question generates more cognitive load than the others and the user interface on some
-                    browser platforms did not enforce adequate consistency checks.
-                </li>
-                <li>Open-ended questions had to have HIPAA Privacy Rule related warnings because email contact
-                    information was collected and respondents potentially could disclose sensitive medical-related data.
-                    No respondent's actual responses had sensitive data concerns.
-                </li>
-            </ul>
-        </div>
-        <div class="survey-component">
-            <h4>Survey Questions and Response Summaries</h4>
-            <a href="SurveyMonkey%20Analyze%20-%20Habits%20for%20Happiness%20and%20Well%20Being%20Survey.pdf">Survey 3
-                Questions and
-                Responses</a>
-        </div>
+    </div>
 
-        <h2>Diary Study Focusing on the First Hour of the Day</h2>
-        <div class="survey-component">
-            Based on the findings in survey 1, there was a clear preference expressed by the majority of respondents
-          to work on healthy behaviors first thing in the morning.  This diary study's goal is to explore environmental
-          factors prior to the introduction of any type of solution.
-          <p>
-            <a href="/research/diary%20study%20information%20and%20release.pdf">Study Explanation for Participants and Release</a>
-          </p>
-          <p>
-            Results to be published here on conclusion of study.
-          </p>
-        </div>
-    </main>
-    <footer>
-        <nav>
-            <a href="/index.html">Home</a><a href="/personas.html">Next - Personas</a>
-        </nav>
-        <div class="centered big-margin"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img
-                alt="Creative Commons License" style="border-width:0"
-                src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"/></a><br/>This work is licensed under a <a
-                rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons
-            Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
-        </div>
-    </footer>
+    <div class="survey-component">
+
+      <div class='tableauPlaceholder' style='width: 1020px; height: 1033px;'>
+        <noscript><a href='#'><img alt='Story Title '
+                                   src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey2forInitialNeedsFindingforAddingPositiveHabitsApp&#47;Story1&#47;1_rss.png'
+                                   style='border: none'/></a></noscript>
+        <object class='tableauViz' width='893' height='700' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+          <param name='site_root' value=''/>
+          <param name='name' value='Survey2forInitialNeedsFindingforAddingPositiveHabitsApp&#47;Story1'/>
+          <param name='tabs' value='no'/>
+          <param name='toolbar' value='yes'/>
+          <param name='static_image'
+                 value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;Survey2forInitialNeedsFindingforAddingPositiveHabitsApp&#47;Story1&#47;1.png'/>
+          <param name='animate_transition' value='yes'/>
+          <param name='display_static_image' value='yes'/>
+          <param name='display_spinner' value='yes'/>
+          <param name='display_overlay' value='yes'/>
+          <param name='display_count' value='yes'/>
+          <param name='showVizHome' value='no'/>
+          <param name='showTabs' value='y'/>
+          <param name='bootstrapWhenNotified' value='true'/>
+        </object>
+      </div>
+
+    </div>
+
+    <h2>Diary Study Focusing on the First Hour of the Day</h2>
+    <div class="survey-component">
+      Based on the findings in survey 1, there was a clear preference expressed by the majority of respondents
+      to work on healthy behaviors first thing in the morning. This diary study's goal is to explore environmental
+      factors prior to the introduction of any type of solution.  Although using contextual inquiry was considered, I felt respecting
+      people's privacy in such a delicate time of day was more appropriate and a diary study was an agreeable compromise. This method also
+      allows for a longer period of reporting, but suffers from self reporting biases.
+      <p>
+        <a href="/research/diary%20study%20information%20and%20release.pdf">Study Explanation for Participants and
+          Release</a>
+      </p>
+      <p>
+        Results to be published here on conclusion of study.
+      </p>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <a href="/index.html">Home</a><a href="/personas.html">Next - Personas</a>
+    </nav>
+    <div class="centered big-margin"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img
+      alt="Creative Commons License" style="border-width:0"
+      src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"/></a><br/>This work is licensed under a <a
+      rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons
+      Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+    </div>
+  </footer>
 </div>
 
+<script>
+
+  function toggle(selector) {
+    document.querySelector(selector).toggle();
+  }
+
+  document.querySelector('template[is=dom-bind]').isExpanded = function (opened) {
+    return String(opened);
+  };
+
+</script>
 <!-- End Document -->
 </body>
 </html>
